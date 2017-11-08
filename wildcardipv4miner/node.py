@@ -81,16 +81,18 @@ class Miner(BasePollerFT):
         self.wildcard_list = self.config.get('wildcard_list', None)
         self.max_entries = self.config.get('max_entries', 50000)
         self.wildcard_object = []
-        size = 0
+        self.size = 0
         for entry in self.wildcard_list:
             w_object = _wildcard_ipv4(entry)
-            size += w_object.size
+            self.size += w_object.size
             self.wildcard_object.append(w_object)
-        if size > self.max_entries:
-            raise ValueError(
-                'Wildcard list will generate {} entries. It is over the limit of {}.'.format(size, self.max_entries))
 
     def _build_iterator(self, item):
+        if self.size > self.max_entries:
+            raise ValueError(
+                'Wildcard list will generate {} entries. It is over the limit of {}.'.format(self.size,
+                                                                                             self.max_entries))
+
         def main_loop():
             for o in self.wildcard_object:
                 for e in o.iterate():
