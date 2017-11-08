@@ -3,7 +3,7 @@ description: >
   Wildcard IPv4 generator
 
 prototypes:
-  eevblog:
+  wildcardipv4:
     author: Palo Alto Networks TBD
     class: wildcardipv4miner.Miner
     development_status: EXPERIMENTAL
