@@ -14,6 +14,6 @@ In example, 10.0.10.0/255.252.255.0 will generate the following list of entries
 
 ## Installation
 
-Add it as an external extensions introduced in MineMeld 0.9.32 [link](https://live.paloaltonetworks.com/t5/MineMeld-Discussions/What-s-new-in-MineMeld-0-9-32/td-p/141261 What's new in MineMeld 0.9.32)
+Add it as an external extensions introduced in [MineMeld 0.9.32](https://live.paloaltonetworks.com/t5/MineMeld-Discussions/What-s-new-in-MineMeld-0-9-32/td-p/141261 "What's new in MineMeld 0.9.32")
 
-Use the *git* option with the URL of this repository ( https://github.com/PaloAltoNetworks/wildcardipv4-miner.git )
+Use the **git** option with the URL of this repository ( https://github.com/PaloAltoNetworks/wildcardipv4-miner.git )
