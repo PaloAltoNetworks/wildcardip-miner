@@ -1,0 +1,34 @@
+url: https://github.com/PaloAltoNetworks/wildcardipv4-miner
+description: >
+  Wildcard IPv4 generator
+
+prototypes:
+  eevblog:
+    author: Palo Alto Networks TBD
+    class: wildcardipv4miner.Miner
+    development_status: EXPERIMENTAL
+    node_type: miner
+    indicator_types:
+      - IPv4
+    tags:
+      - extension
+      - wildcardipv4
+    description: >
+      example prototype for wildcardipv4miner.Miner.
+    config:
+      # the list of wildcard strings
+      wildcard_list:
+        - 10.0.10.0/255.252.255.0
+        - 192.168.0.1/255.255.252.255
+      # you can define a build limit. The miner will fail in case the generation goes over this limit.
+      max_entries: 256
+      # regenerate the entries once a day
+      interval: 86400
+      # age out of indicators
+      age_out:
+        sudden_death: true
+        interval: 1d
+        default: null
+      # flag indicators with share level green
+      attributes:
+        share_level: green
