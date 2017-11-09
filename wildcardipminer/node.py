@@ -69,6 +69,8 @@ class _wildcard_ipv4(object):
                 yield self._generate_cdir(ip | e2 << pending_slices[0][0], 32 - self._hostbits)
 
     def iterate(self):
+        if len(self._zero_slice) == 0:
+            return [self._generate_cdir(self._ip_part[0] & self._ip_part[1], 32 - self._hostbits)]
         return self._iterate(self._ip_part[0] & self._ip_part[1], self._zero_slice)
 
     def __init__(self, ip_netmask):
