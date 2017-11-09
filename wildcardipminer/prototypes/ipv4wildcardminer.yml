@@ -14,7 +14,7 @@ prototypes:
       - extension
       - wildcardipv4
     description: >
-      example prototype for wildcardipv4miner.Miner.
+      example prototype for wildcardipminer.Miner.
     config:
       # the list of wildcard strings
       wildcard_list:
