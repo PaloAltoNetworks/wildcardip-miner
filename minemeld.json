@@ -1,15 +1,15 @@
 {
   "version": "0.1",
-  "name": "wildcardipv4-miner",
+  "name": "wildcardip-miner",
   "author": "Palo Alto Networks",
   "author_email": "techbizdev@paloaltonetworks.com",
   "description": "Sample MineMeld node extension to generate CIDR variances from a wildcard",
   "entry_points": {
     "minemeld_nodes": {
-      "wildcardipv4miner.Miner": "wildcardipv4miner.node:Miner"
+      "wildcardipminer.Miner": "wildcardipminer.node:Miner"
     },
     "minemeld_prototypes": {
-      "wildcardipv4miner.prototypes": "wildcardipv4miner:prototypes"
+      "wildcardipminer.prototypes": "wildcardipminer:prototypes"
     }
   },
   "manifest_version": 0

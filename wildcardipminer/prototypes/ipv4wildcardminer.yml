@@ -5,7 +5,7 @@ description: >
 prototypes:
   wildcardipv4:
     author: Palo Alto Networks TBD
-    class: wildcardipv4miner.Miner
+    class: wildcardipminer.Miner
     development_status: EXPERIMENTAL
     node_type: miner
     indicator_types:
