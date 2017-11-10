@@ -80,7 +80,7 @@ class _wildcard_ipv4(object):
 class Miner(BasePollerFT):
     def configure(self):
         super(Miner, self).configure()
-        self.wildcard_list = self.config.get('wildcard_list', None)
+        self.wildcard_list = self.config.get('wildcard_list', [])
         self.max_entries = self.config.get('max_entries', 50000)
         self.wildcard_object = []
         self.size = 0
