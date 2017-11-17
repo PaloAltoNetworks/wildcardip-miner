@@ -27,7 +27,7 @@ prototypes:
       # age out of indicators
       age_out:
         sudden_death: true
-        interval: 1d
+        interval: 86400
         default: null
       # flag indicators with share level green
       attributes:
